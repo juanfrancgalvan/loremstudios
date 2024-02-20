@@ -238,12 +238,11 @@ a {
   padding: 0 10px;
 }
 
-.footer span {
+.footer p {
   margin-top: 10px;
   display: flex;
   justify-content: center;
   color: var(--dark-gray-2);
-  font-weight: 700;
 }
 
 @media only screen and (width <=992px) {
