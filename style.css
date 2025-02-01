@@ -1,13 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
-
-:root {
-  --gray: #eeeeee;
-  --dark-gray: #dddddd;
-  --dark-gray-2: #444444;
-  --light-blue: #7c9fac;
-  --light-blue-2: #4894b3;
-  --dark-blue: #597e8d;
-}
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
 
 * {
   margin: 0;
@@ -21,7 +12,7 @@ html {
 }
 
 body {
-  background-color: var(--gray);
+  background-color: #eeeeee;
 }
 
 li {
@@ -29,8 +20,8 @@ li {
 }
 
 a {
-  color: black;
   text-decoration: none;
+  color: #000000;
 }
 
 .container {
@@ -48,7 +39,7 @@ a {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: var(--gray);
+  background-color: #eeeeee;
 }
 
 .logo {
@@ -64,11 +55,11 @@ a {
   align-items: center;
   text-align: center;
   margin-left: 20px;
+  transition: transform 0.5s ease;
 }
 
 .logo img:hover {
-  transition: 0.5s ease;
-  transform: scale(1.1);
+  transform: scale(1.03);
 }
 
 .nav {
@@ -82,9 +73,12 @@ a {
   justify-content: space-around;
 }
 
+.nav-link {
+  transition: color 0.3s ease;
+}
+
 .nav-link:hover {
-  color: var(--light-blue-2);
-  transition: all 0.3s ease;
+  color: #4894b3;
 }
 
 .button {
@@ -131,12 +125,12 @@ a {
   height: 30px;
   margin: 15px 0;
   border: 0;
-  background-color: var(--light-blue);
+  background-color: #7c9fac;
+  transition: background-color 0.2s ease-in;
 }
 
 .hero input[type='submit']:hover {
-  background-color: var(--light-blue-2);
-  transition: background-color 0.2s ease-in;
+  background-color: #4894b3;
 }
 
 .features {
@@ -149,7 +143,7 @@ a {
   justify-content: center;
   height: 125px;
   width: 20vw;
-  color: var(--dark-blue);
+  color: #597e8d;
 }
 
 .features .desc {
@@ -191,7 +185,7 @@ a {
 }
 
 .product .level {
-  background-color: var(--dark-gray);
+  background-color: #dddddd;
   color: black;
   padding: 15px 0;
   width: 100%;
@@ -214,18 +208,18 @@ a {
 .product button {
   border: 0;
   margin: 15px 0;
-  background-color: var(--light-blue);
+  background-color: #7c9fac;
   font-weight: 400;
+  transition: background-color 0.2s ease-in;
 }
 
 .product button:hover {
-  background-color: var(--light-blue-2);
-  transition: background-color 0.2s ease-in;
+  background-color: #4894b3;
 }
 
 .footer {
   margin-top: 30px;
-  background-color: var(--dark-gray);
+  background-color: #dddddd;
   padding: 20px;
 }
 
@@ -242,7 +236,7 @@ a {
   margin-top: 10px;
   display: flex;
   justify-content: center;
-  color: var(--dark-gray-2);
+  color: #444444;
 }
 
 @media only screen and (width <=992px) {
